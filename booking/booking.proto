@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package booking;
 
-option go_package = "github.com/Moldirkab/ap2_final_proto/bookingpb;bookingpb";
+option go_package = "github.com/Moldirkab/ap2_final_generated/bookingpb;bookingpb";
 
 service BookingService {
   rpc CreateBooking(CreateBookingRequest) returns (BookingResponse);
