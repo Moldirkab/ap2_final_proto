@@ -10,6 +10,7 @@ service BookingService {
   rpc CompleteBooking(CompleteBookingRequest) returns (BookingResponse);
   rpc GetBooking(GetBookingRequest) returns (BookingResponse);
   rpc ListUserBookings(ListUserBookingsRequest) returns (ListBookingsResponse);
+  rpc ConfirmBooking(ConfirmBookingRequest) returns (BookingResponse);
 }
 
 message CreateBookingRequest {
@@ -48,4 +49,8 @@ message BookingResponse {
 
 message ListBookingsResponse {
   repeated BookingResponse bookings = 1;
+}
+
+message ConfirmBookingRequest {
+  string booking_id = 1;
 }
