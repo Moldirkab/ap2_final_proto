@@ -1,7 +1,6 @@
 syntax = "proto3";
 
 package booking;
-
 option go_package = "github.com/Moldirkab/ap2_final_generated/bookingpb;bookingpb";
 
 service BookingService {
